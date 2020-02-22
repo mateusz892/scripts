@@ -8,7 +8,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne= CONCAT(subcategoryOne, 'Botki-na-obcasie;')"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%na obcas%') OR (description LIKE '%na obcas%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne NOT LIKE '%Botki-na-obcasie%'"
 ;
 
@@ -23,7 +23,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo='Botki-na-obcasie'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%na obcas%') OR (description LIKE '%na obcas%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-na-obcasie'"
 ;
@@ -39,7 +39,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree='Botki-na-obcasie'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%na obcas%') OR (description LIKE '%na obcas%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-na-obcasie'"
 ."AND subcategoryTwo!=''"
@@ -56,7 +56,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryOne LIKE '%Botki-na-obcasie%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -69,7 +69,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryTwo='Botki-na-obcasie'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -82,7 +82,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryThree='Botki-na-obcasie'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -96,7 +96,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne= CONCAT(subcategoryOne, 'Botki-na-platformie;')"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%na platfor%') OR (description LIKE '%na platfor%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne NOT LIKE '%Botki-na-platformie%'"
 ;
 
@@ -111,7 +111,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo='Botki-na-platformie'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%na platfor%') OR (description LIKE '%na platfor%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-na-platformie'"
 ;
@@ -127,7 +127,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree='Botki-na-platformie'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%na platfor%') OR (description LIKE '%na platfor%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-na-platformie'"
 ."AND subcategoryTwo!=''"
@@ -144,7 +144,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryOne LIKE '%Botki-na-platformie%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -157,7 +157,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryTwo='Botki-na-platformie'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -170,7 +170,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryThree='Botki-na-platformie'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -184,7 +184,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne= CONCAT(subcategoryOne, 'Botki-peep-toe;')"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%peep toe%') OR (description LIKE '%peep toe%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne NOT LIKE '%Botki-peep-toe%'"
 ;
 
@@ -199,7 +199,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo='Botki-peep-toe'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%peep toe%') OR (description LIKE '%peep toe%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-peep-toe'"
 ;
@@ -215,7 +215,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree='Botki-peep-toe'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%peep toe%') OR (description LIKE '%peep toe%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-peep-toe'"
 ."AND subcategoryTwo!=''"
@@ -232,7 +232,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryOne LIKE '%Botki-peep-toe%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -245,7 +245,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryTwo='Botki-peep-toe'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -258,7 +258,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryThree='Botki-peep-toe'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -272,7 +272,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne= CONCAT(subcategoryOne, 'Botki-sznurowane;')"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%sznurow%') OR (description LIKE '%sznurow%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne NOT LIKE '%Botki-sznurowane%'"
 ;
 
@@ -287,7 +287,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo='Botki-sznurowane'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%sznurow%') OR (description LIKE '%sznurow%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-sznurowane'"
 ;
@@ -303,7 +303,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree='Botki-sznurowane'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%sznurow%') OR (description LIKE '%sznurow%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-sznurowane'"
 ."AND subcategoryTwo!=''"
@@ -320,7 +320,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryOne LIKE '%Botki-sznurowane%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -333,7 +333,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryTwo='Botki-sznurowane'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -346,7 +346,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryThree='Botki-sznurowane'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -360,7 +360,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne= CONCAT(subcategoryOne, 'Botki-z-fredzlami;')"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%frędzl%') OR (description LIKE '%frędzl%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne NOT LIKE '%Botki-z-fredzlami%'"
 ;
 
@@ -375,7 +375,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo='Botki-z-fredzlami'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%frędzl%') OR (description LIKE '%frędzl%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-z-fredzlami'"
 ;
@@ -391,7 +391,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree='Botki-z-fredzlami'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%frędzl%') OR (description LIKE '%frędzl%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-z-fredzlami'"
 ."AND subcategoryTwo!=''"
@@ -408,7 +408,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryOne LIKE '%Botki-z-fredzlami%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -421,7 +421,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryTwo='Botki-z-fredzlami'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -434,7 +434,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryThree='Botki-z-fredzlami'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -448,7 +448,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne= CONCAT(subcategoryOne, 'Botki-zamszowe;')"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%zamszow%') OR (description LIKE '%zamszow%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne NOT LIKE '%Botki-zamszowe%'"
 ;
 
@@ -463,7 +463,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo='Botki-zamszowe'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%zamszow%') OR (description LIKE '%zamszow%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-zamszowe'"
 ;
@@ -479,7 +479,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree='Botki-zamszowe'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%zamszow%') OR (description LIKE '%zamszow%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-zamszowe'"
 ."AND subcategoryTwo!=''"
@@ -496,7 +496,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryOne LIKE '%Botki-zamszowe%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -509,7 +509,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryTwo='Botki-zamszowe'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -522,7 +522,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree=''"
 ."WHERE (((name LIKE '%dziecięc%') OR (description LIKE '%dziecięc%') OR (name LIKE '%dzieck%') OR (description LIKE '%dzieck%') OR (name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%')) AND (subcategoryThree='Botki-zamszowe'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -536,7 +536,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne= CONCAT(subcategoryOne, 'Botki-zimowe;')"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%zimow%') OR (description LIKE '%zimow%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne NOT LIKE '%Botki-zimowe%'"
 ;
 
@@ -551,7 +551,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryTwo='Botki-zimowe'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%zimow%') OR (description LIKE '%zimow%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-zimowe'"
 ;
@@ -567,7 +567,7 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryThree='Botki-zimowe'"
 ."WHERE ((name LIKE '%botki %'))"
 ."AND ((name LIKE '%zimow%') OR (description LIKE '%zimow%'))"
-//."AND canUpdate!='tak'"
+."AND canUpdate!='tak'"
 ."AND subcategoryOne!=''"
 ."AND subcategoryOne!='Botki-zimowe'"
 ."AND subcategoryTwo!=''"

@@ -272,104 +272,6 @@ if(!$result) {
 }
 
 $sql = "UPDATE `jos_get_xml_two`"
-."SET subcategoryOne='Biustonosze-minimizer'"
-."WHERE ((name LIKE '%biustonosz %'))"
-."AND ((name LIKE '%minimize%') OR (description LIKE '%minimize%'))"
-."AND canUpdate!='tak'"
-."AND subcategoryOne=''"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
-."SET subcategoryTwo='Biustonosze-minimizer'"
-."WHERE ((name LIKE '%biustonosz %'))"
-."AND ((name LIKE '%minimize%') OR (description LIKE '%minimize%'))"
-."AND canUpdate!='tak'"
-."AND subcategoryOne!=''"
-."AND subcategoryOne!='Biustonosze-minimizer'"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
-."SET subcategoryThree='Biustonosze-minimizer'"
-."WHERE ((name LIKE '%biustonosz %'))"
-."AND ((name LIKE '%minimize%') OR (description LIKE '%minimize%'))"
-."AND canUpdate!='tak'"
-."AND subcategoryOne!=''"
-."AND subcategoryOne!='Biustonosze-minimizer'"
-."AND subcategoryTwo!=''"
-."AND subcategoryTwo!='Biustonosze-minimizer'"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
-."SET subcategoryOne='Biustonosze-sportowe'"
-."WHERE ((name LIKE '%biustonosz %'))"
-."AND ((name LIKE '%sportow%') OR (description LIKE '%sportow%'))"
-."AND canUpdate!='tak'"
-."AND subcategoryOne=''"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
-."SET subcategoryTwo='Biustonosze-sportowe'"
-."WHERE ((name LIKE '%biustonosz %'))"
-."AND ((name LIKE '%sportow%') OR (description LIKE '%sportow%'))"
-."AND canUpdate!='tak'"
-."AND subcategoryOne!=''"
-."AND subcategoryOne!='Biustonosze-sportowe'"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
-."SET subcategoryThree='Biustonosze-sportowe'"
-."WHERE ((name LIKE '%biustonosz %'))"
-."AND ((name LIKE '%sportow%') OR (description LIKE '%sportow%'))"
-."AND canUpdate!='tak'"
-."AND subcategoryOne!=''"
-."AND subcategoryOne!='Biustonosze-sportowe'"
-."AND subcategoryTwo!=''"
-."AND subcategoryTwo!='Biustonosze-sportowe'"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne='Biustonosze-koronkowe'"
 ."WHERE ((name LIKE '%biustonosz %'))"
 ."AND ((name LIKE '%koronk%') OR (description LIKE '%koronk%'))"
@@ -468,6 +370,55 @@ if(!$result) {
 }
 
 $sql = "UPDATE `jos_get_xml_two`"
+."SET subcategoryOne='Biustonosze-sportowe'"
+."WHERE ((name LIKE '%biustonosz %'))"
+."AND ((name LIKE '%sportow%') OR (description LIKE '%sportow%'))"
+."AND canUpdate!='tak'"
+."AND subcategoryOne=''"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET subcategoryTwo='Biustonosze-sportowe'"
+."WHERE ((name LIKE '%biustonosz %'))"
+."AND ((name LIKE '%sportow%') OR (description LIKE '%sportow%'))"
+."AND canUpdate!='tak'"
+."AND subcategoryOne!=''"
+."AND subcategoryOne!='Biustonosze-sportowe'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET subcategoryThree='Biustonosze-sportowe'"
+."WHERE ((name LIKE '%biustonosz %'))"
+."AND ((name LIKE '%sportow%') OR (description LIKE '%sportow%'))"
+."AND canUpdate!='tak'"
+."AND subcategoryOne!=''"
+."AND subcategoryOne!='Biustonosze-sportowe'"
+."AND subcategoryTwo!=''"
+."AND subcategoryTwo!='Biustonosze-sportowe'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET subcategoryOne='Biustonosze-miekkie'"
 ."WHERE ((name LIKE '%biustonosz %'))"
 ."AND ((name LIKE '%miękki%') OR (description LIKE '%miękki%'))"
@@ -507,6 +458,55 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."AND subcategoryOne!='Biustonosze-miekkie'"
 ."AND subcategoryTwo!=''"
 ."AND subcategoryTwo!='Biustonosze-miekkie'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET subcategoryOne='Biustonosze-minimizer'"
+."WHERE ((name LIKE '%biustonosz %'))"
+."AND ((name LIKE '%minimize%') OR (description LIKE '%minimize%'))"
+."AND canUpdate!='tak'"
+."AND subcategoryOne=''"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET subcategoryTwo='Biustonosze-minimizer'"
+."WHERE ((name LIKE '%biustonosz %'))"
+."AND ((name LIKE '%minimize%') OR (description LIKE '%minimize%'))"
+."AND canUpdate!='tak'"
+."AND subcategoryOne!=''"
+."AND subcategoryOne!='Biustonosze-minimizer'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET subcategoryThree='Biustonosze-minimizer'"
+."WHERE ((name LIKE '%biustonosz %'))"
+."AND ((name LIKE '%minimize%') OR (description LIKE '%minimize%'))"
+."AND canUpdate!='tak'"
+."AND subcategoryOne!=''"
+."AND subcategoryOne!='Biustonosze-minimizer'"
+."AND subcategoryTwo!=''"
+."AND subcategoryTwo!='Biustonosze-minimizer'"
 ;
 
 $result = mysql_query($sql);

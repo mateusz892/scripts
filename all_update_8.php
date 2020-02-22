@@ -327,7 +327,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-/*$sql = "UPDATE `jos_get_xml_two`"
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne='Kurtki-do-biegania-damskie'"
 ."WHERE ((name LIKE '%kurtka %'))"
 ."AND ((name LIKE '%biegani%') OR (description LIKE '%biegani%'))"
@@ -340,7 +340,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}*/
+}
 
 /*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne='Kurtki-jeansowe-damskie'"
@@ -445,7 +445,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-/*$sql = "UPDATE `jos_get_xml_two`"
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne='Kurtki-sportowe-damskie'"
 ."WHERE ((name LIKE '%kurtka %'))"
 ."AND ((name LIKE '%sportow%') OR (description LIKE '%sportow%'))"
@@ -458,7 +458,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}*/
+}
 
 /*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne='Kurtki-zimowe-damskie'"
@@ -563,7 +563,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-/*$sql = "UPDATE `jos_get_xml_two`"
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne='Kurtki-przejsciowe-meskie'"
 ."WHERE ((name LIKE '%kurtka %'))"
 ."AND ((name LIKE '%przejściow%') OR (description LIKE '%przejściow%'))"
@@ -606,4 +606,4 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}*/
+}

@@ -5,62 +5,6 @@ mysql_set_charset('utf8',$com);
 mysql_select_db("sa7ihi_longfash", $com) or die(mysql_error());
 
 $sql = "UPDATE `jos_get_xml_two`"
-."SET categoryOne='Bluzki-wieczorowe'"
-."WHERE ((name LIKE '%bluzka %'))"
-."AND ((name LIKE '%wieczorow%') OR (description LIKE '%wieczorow%'))"
-."AND canUpdate!='tak'"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
-."SET categoryOne=''"
-."WHERE categoryOne='Bluzki-wieczorowe'"
-."AND ((name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%'))"
-."AND canUpdate!='tak'"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
-."SET categoryOne='Bluzki-sportowe'"
-."WHERE ((name LIKE '%bluzka %'))"
-."AND ((name LIKE '%sportow%') OR (description LIKE '%sportow%'))"
-."AND canUpdate!='tak'"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
-."SET categoryOne=''"
-."WHERE categoryOne='Bluzki-sportowe'"
-."AND ((name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%'))"
-."AND canUpdate!='tak'"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne='Bluzki-koronkowe'"
 ."WHERE ((name LIKE '%bluzka %'))"
 ."AND ((name LIKE '%koronkow%') OR (description LIKE '%koronkow%'))"
@@ -105,6 +49,62 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne=''"
 ."WHERE categoryOne='Bluzki-oversize'"
+."AND ((name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%'))"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET categoryOne='Bluzki-sportowe'"
+."WHERE ((name LIKE '%bluzka %'))"
+."AND ((name LIKE '%sportow%') OR (description LIKE '%sportow%'))"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET categoryOne=''"
+."WHERE categoryOne='Bluzki-sportowe'"
+."AND ((name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%'))"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET categoryOne='Bluzki-wieczorowe'"
+."WHERE ((name LIKE '%bluzka %'))"
+."AND ((name LIKE '%wieczorow%') OR (description LIKE '%wieczorow%'))"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET categoryOne=''"
+."WHERE categoryOne='Bluzki-wieczorowe'"
 ."AND ((name LIKE '%dziewczę%') OR (description LIKE '%dziewczę%'))"
 ."AND canUpdate!='tak'"
 ;
@@ -293,17 +293,17 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne='Botki-damskie'"
-."WHERE (subcategoryOne='Botki-azurowe'"
-."OR subcategoryOne='Botki-na-koturnie'"
-."OR subcategoryOne='Botki-na-obcasie'"
-."OR subcategoryOne='Botki-na-platformie'"
-."OR subcategoryOne='Botki-peep-toe'"
-."OR subcategoryOne='Botki-sznurowane'"
-."OR subcategoryOne='Botki-z-fredzlami'"
-."OR subcategoryOne='Botki-zamszowe'"
-."OR subcategoryOne='Botki-zimowe'"
+."WHERE ((subcategoryOne LIKE '%Botki-azurowe%')"
+."OR (subcategoryOne LIKE '%Botki-na-koturnie%')"
+."OR (subcategoryOne LIKE '%Botki-na-obcasie%')"
+."OR (subcategoryOne LIKE '%Botki-na-platformie%')"
+."OR (subcategoryOne LIKE '%Botki-peep-toe%')"
+."OR (subcategoryOne LIKE '%Botki-sznurowane%')"
+."OR (subcategoryOne LIKE '%Botki-z-fredzlami%')"
+."OR (subcategoryOne LIKE '%Botki-zamszowe%')"
+."OR (subcategoryOne LIKE '%Botki-zimowe%')"
 ."OR ((name LIKE '%botki %') AND (subcategoryTwo='') AND (subcategoryThree='')))"
-."AND canUpdate!='tak'"
+//."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
