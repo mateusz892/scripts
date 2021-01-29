@@ -7,7 +7,7 @@ mysql_select_db("u705076634_longfash", $com) or die(mysql_error());
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-maxi;')"
 ."WHERE ((name LIKE '%sukienka %'))"
-."AND ((name LIKE '%maxi%') OR (description LIKE '%maxi%') OR (shopcategory LIKE '%maxi%'))"
+."AND ((name LIKE '%długa%') OR (description LIKE '%długa%') OR (name LIKE '%do ziem%') OR (description LIKE '%do ziem%') OR (name LIKE '%maxi%') OR (description LIKE '%maxi%') OR (shopcategory LIKE '%długie%'))"
 ."AND canUpdate!='tak'"
 ."AND categoryOne NOT LIKE '%Sukienki-maxi%'"
 ;
@@ -22,7 +22,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryTwo='Sukienki-maxi'"
 ."WHERE ((name LIKE '%sukienka %'))"
-."AND ((name LIKE '%maxi%') OR (description LIKE '%maxi%'))"
+."AND ((name LIKE '%długa%') OR (description LIKE '%długa%') OR (name LIKE '%do ziem%') OR (description LIKE '%do ziem%') OR (name LIKE '%maxi%') OR (description LIKE '%maxi%') OR (shopcategory LIKE '%długie%'))"
 ."AND canUpdate!='tak'"
 ."AND categoryOne!=''"
 ."AND categoryOne!='Sukienki-maxi'"
@@ -38,7 +38,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryThree='Sukienki-maxi'"
 ."WHERE ((name LIKE '%sukienka %'))"
-."AND ((name LIKE '%maxi%') OR (description LIKE '%maxi%'))"
+."AND ((name LIKE '%długa%') OR (description LIKE '%długa%') OR (name LIKE '%do ziem%') OR (description LIKE '%do ziem%') OR (name LIKE '%maxi%') OR (description LIKE '%maxi%') OR (shopcategory LIKE '%długie%'))"
 ."AND canUpdate!='tak'"
 ."AND categoryOne!=''"
 ."AND categoryOne!='Sukienki-maxi'"
@@ -102,7 +102,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-mini;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%mini%') OR (description LIKE '%mini%') OR (shopcategory LIKE '%mini%'))"
@@ -149,7 +149,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 /*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne='Sukienki-mlodziezowe'"
@@ -249,7 +249,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-olowkowe;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%ołówko%') OR (description LIKE '%ołówko%') OR (shopcategory LIKE '%ołówko%'))"
@@ -296,9 +296,9 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-pastelowe;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%pastelo%') OR (description LIKE '%pastelo%') OR (shopcategory LIKE '%pastelo%'))"
@@ -345,12 +345,12 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-plus-size;')"
 ."WHERE ((name LIKE '%sukienka %'))"
-."AND ((name LIKE '%plus siz%') OR (description LIKE '%plus siz%') OR (shopcategory LIKE '%plus siz%'))"
+."AND ((name LIKE '%plus siz%') OR (description LIKE '%plus siz%') OR (name LIKE '%dla puszys%') OR (description LIKE '%dla puszys%') OR (shopcategory LIKE '%plus siz%'))"
 ."AND canUpdate!='tak'"
 ."AND categoryOne NOT LIKE '%Sukienki-plus-size%'"
 ;
@@ -365,7 +365,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryTwo='Sukienki-plus-size'"
 ."WHERE ((name LIKE '%sukienka %'))"
-."AND ((name LIKE '%plus siz%') OR (description LIKE '%plus siz%'))"
+."AND ((name LIKE '%plus siz%') OR (description LIKE '%plus siz%') OR (name LIKE '%dla puszys%') OR (description LIKE '%dla puszys%') OR (shopcategory LIKE '%plus siz%'))"
 ."AND canUpdate!='tak'"
 ."AND categoryOne!=''"
 ."AND categoryOne!='Sukienki-plus-size'"
@@ -381,7 +381,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryThree='Sukienki-plus-size'"
 ."WHERE ((name LIKE '%sukienka %'))"
-."AND ((name LIKE '%plus siz%') OR (description LIKE '%plus siz%'))"
+."AND ((name LIKE '%plus siz%') OR (description LIKE '%plus siz%') OR (name LIKE '%dla puszys%') OR (description LIKE '%dla puszys%') OR (shopcategory LIKE '%plus siz%'))"
 ."AND canUpdate!='tak'"
 ."AND categoryOne!=''"
 ."AND categoryOne!='Sukienki-plus-size'"
@@ -445,7 +445,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-sportowe;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%sport%') OR (description LIKE '%sport%') OR (shopcategory LIKE '%sport%'))"
@@ -492,7 +492,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-trapezowe;')"

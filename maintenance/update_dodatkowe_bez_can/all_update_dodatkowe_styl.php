@@ -4,7 +4,7 @@ $com=mysql_connect("localhost", "u705076634_longfash" ,"Dds76sd67gdcg");
 mysql_set_charset('utf8',$com);
 mysql_select_db("u705076634_longfash", $com) or die(mysql_error());
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'młodzieżowe;'), styleName= CONCAT(styleName, 'mlodziezowe;')"
 ."WHERE ((name LIKE '%młodzież%') OR (description LIKE '%młodzież%'))"
 ."AND style NOT LIKE '%młodzieżowe%'"
@@ -44,7 +44,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'eleganckie;'), styleName= CONCAT(styleName, 'eleganckie;')"
@@ -62,7 +62,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'boho;'), styleName= CONCAT(styleName, 'boho;')"
-."WHERE ((name LIKE '%boho %') OR (description LIKE '%boho %'))"
+."WHERE ((name LIKE '%boho %') OR (description LIKE '%boho %') OR (shopcategory LIKE '%boho %') OR (name LIKE '% boho%') OR (description LIKE '% boho%') OR (shopcategory LIKE '% boho%') OR (((description LIKE '%kwiat%') OR (name LIKE '%kwiat%')) AND ((description LIKE '%koronk%') OR (name LIKE '%koronk%'))))"
 ."AND style NOT LIKE '%boho%'"
 ."AND ((maincategory='Bluzki-damskie') OR (maincategory='Kurtki-damskie') OR (maincategory='Plaszcze-damskie') OR (maincategory='Spodnice') OR (maincategory='Spodnie-damskie') OR (maincategory='Sukienki') OR (maincategory='Swetry-damskie') OR (categoryOne='Baleriny-damskie') OR (categoryOne='Botki-damskie') OR (categoryOne='Czolenka-damskie') OR (categoryOne='Kozaki-damskie') OR (categoryOne='Polbuty-damskie') OR (categoryOne='Szpilki-damskie'))"
 ;
@@ -75,6 +75,118 @@ if(!$result) {
 }
 
 $sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'sportowe;'), styleName= CONCAT(styleName, 'sportowe;')"
+."WHERE ((name LIKE '%sport%') OR (description LIKE '%sport%') OR (shopcategory LIKE '%sport%'))"
+."AND style NOT LIKE '%sportowe%'"
+."AND (maincategory='Sukienki')"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'hiszpanki;'), styleName= CONCAT(styleName, 'hiszpanki;')"
+."WHERE ((name LIKE '%hiszpa%') OR (description LIKE '%hiszpa%') OR ((name LIKE '%odkryt%') AND (name LIKE '%ramion%')) OR ((description LIKE '%odkryt%') AND (description LIKE '%ramion%')))"
+."AND style NOT LIKE '%hiszpanki%'"
+."AND (maincategory='Sukienki')"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'kopertowe;'), styleName= CONCAT(styleName, 'kopertowe;')"
+."WHERE ((name LIKE '%kopert%') OR (description LIKE '%kopert%') OR (shopcategory LIKE '%kopert%'))"
+."AND style NOT LIKE '%kopertowe%'"
+."AND (maincategory='Sukienki')"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'koszulowe;'), styleName= CONCAT(styleName, 'koszulowe;')"
+."WHERE ((name LIKE '%koszulo%') OR (description LIKE '%koszulo%') OR (shopcategory LIKE '%koszulo%'))"
+."AND style NOT LIKE '%koszulowe%'"
+."AND (maincategory='Sukienki')"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'olowkowe;'), styleName= CONCAT(styleName, 'olowkowe;')"
+."WHERE ((name LIKE '%ołówko%') OR (description LIKE '%ołówko%') OR (shopcategory LIKE '%ołówko%'))"
+."AND style NOT LIKE '%olowkowe%'"
+."AND (maincategory='Sukienki')"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'oversize;'), styleName= CONCAT(styleName, 'oversize;')"
+."WHERE ((name LIKE '%oversiz%') OR (description LIKE '%oversiz%') OR (shopcategory LIKE '%oversiz%'))"
+."AND style NOT LIKE '%oversize%'"
+."AND (maincategory='Sukienki')"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'zwiewne;'), styleName= CONCAT(styleName, 'zwiewne;')"
+."WHERE ((name LIKE '%zwiewn%') OR (description LIKE '%zwiewn%') OR (shopcategory LIKE '%zwiewn%'))"
+."AND style NOT LIKE '%zwiewne%'"
+."AND (maincategory='Sukienki')"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'plisowane;'), styleName= CONCAT(styleName, 'plisowane;')"
+."WHERE ((name LIKE '%plisowa%') OR (description LIKE '%plisowa%') OR (shopcategory LIKE '%plisowa%'))"
+."AND style NOT LIKE '%plisowane%'"
+."AND (maincategory='Sukienki')"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'klasyczne;'), styleName= CONCAT(styleName, 'klasyczne;')"
 ."WHERE ((name LIKE '%klasyk%') OR (description LIKE '%klasyk%') OR (name LIKE '%klasyczn%') OR (description LIKE '%klasyczn%'))"
 ."AND style NOT LIKE '%klasyczne%'"
@@ -114,7 +226,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 /*$sql = "UPDATE `jos_get_xml_two`"
 ."SET style='glamour', styleName='glamour'"
@@ -130,7 +242,7 @@ if(!$result) {
 	echo 'succes';
 }*/
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'rockowe;'), styleName= CONCAT(styleName, 'rockowe;')"
 ."WHERE ((name LIKE '%rockow%') OR (description LIKE '%rockow%'))"
 ."AND style NOT LIKE '%rockowe%'"
@@ -156,7 +268,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 /*$sql = "UPDATE `jos_get_xml_two`"
 ."SET style='sportowe', styleName='sportowe'"
@@ -172,7 +284,7 @@ if(!$result) {
 	echo 'succes';
 }*/
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'marynarskie;'), styleName= CONCAT(styleName, 'marynarskie;')"
 ."WHERE ((name LIKE '%marynars%') OR (description LIKE '%marynars%'))"
 ."AND style NOT LIKE '%marynarskie%'"
@@ -240,4 +352,4 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/

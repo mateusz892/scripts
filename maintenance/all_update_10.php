@@ -134,7 +134,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-asymetryczne;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%asymetry%') OR (description LIKE '%asymetry%') OR (shopcategory LIKE '%asymetry%'))"
@@ -181,7 +181,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 /*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne='Sukienki-dla-puszystych'"
@@ -232,7 +232,7 @@ if(!$result) {
 	echo 'succes';
 }*/
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-do-pracy;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%prac%') OR (description LIKE '%prac%') OR (shopcategory LIKE '%prac%'))"
@@ -279,7 +279,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-dresowe;')"
@@ -330,7 +330,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-dzinsowe;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND (((name LIKE '%dżinso%') OR (description LIKE '%dżinso%') OR (shopcategory LIKE '%dżinso%')) OR ((name LIKE '%jeanso%') OR (description LIKE '%jeanso%') OR (shopcategory LIKE '%jeanso%')))"
@@ -377,9 +377,9 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-gorsetowe;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%gorset%') OR (description LIKE '%gorset%') OR (shopcategory LIKE '%gorset%'))"
@@ -426,7 +426,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-koktajlowe;')"
@@ -526,7 +526,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-koszulowe;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%koszulo%') OR (description LIKE '%koszulo%') OR (shopcategory LIKE '%koszulo%'))"
@@ -573,4 +573,4 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
