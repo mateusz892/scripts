@@ -4,7 +4,7 @@ $com=mysql_connect("localhost", "u705076634_longfash" ,"Dds76sd67gdcg");
 mysql_set_charset('utf8',$com);
 mysql_select_db("u705076634_longfash", $com) or die(mysql_error());
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, 'bez wzorów;'), patternName= CONCAT(patternName, 'bez-wzorow;')"
 ."WHERE ((name LIKE '%bez wzor%') OR (description LIKE '%bez wzor%'))"
 ."AND pattern NOT LIKE '%bez wzorów%'"
@@ -44,11 +44,11 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, 'w paski;'), patternName= CONCAT(patternName, 'w-paski;')"
-."WHERE ((name LIKE '%paski %') OR (description LIKE '%paski %'))"
+."WHERE ((name LIKE '%paski %') OR (description LIKE '%paski %') OR (name LIKE '% paski%') OR (description LIKE '% paski%'))"
 ."AND pattern NOT LIKE '%w paski%'"
 ."AND ((maincategory='Bluzki-damskie') OR (maincategory='Bluzy-damskie') OR (maincategory='Buty-damskie') OR (maincategory='Koszulki-meskie') OR (maincategory='Kurtki-damskie') OR (maincategory='Kurtki-meskie') OR (maincategory='Spodnice') OR (maincategory='Spodnie-damskie') OR (maincategory='Spodnie-meskie') OR (maincategory='Sukienki') OR (maincategory='Swetry-damskie') OR (categoryOne='Baleriny-damskie') OR (categoryOne='Botki-damskie') OR (categoryOne='Czapki-meskie') OR (categoryOne='Czolenka-damskie') OR (categoryOne='Kozaki-damskie') OR (categoryOne='Krawaty') OR (categoryOne='Polbuty-damskie') OR (categoryOne='Stroje-kapielowe-damskie') OR (categoryOne='Szaliki-damskie') OR (categoryOne='Szpilki-damskie') OR (subcategoryOne='Tankini'))"
 ;
@@ -60,7 +60,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, 'z aplikacją;'), patternName= CONCAT(patternName, 'z-aplikacja;')"
 ."WHERE ((name LIKE '%aplikacj%') OR (description LIKE '%aplikacj%'))"
 ."AND pattern NOT LIKE '%z aplikacją%'"
@@ -86,7 +86,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, 'w kwiaty;'), patternName= CONCAT(patternName, 'w-kwiaty;')"
@@ -102,7 +102,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, 'w grochy;'), patternName= CONCAT(patternName, 'w-grochy;')"
 ."WHERE ((name LIKE '%groch%') OR (description LIKE '%groch%'))"
 ."AND pattern NOT LIKE '%w grochy%'"
@@ -198,13 +198,13 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, 'w groszki;'), patternName= CONCAT(patternName, 'w-groszki;')"
-."WHERE ((name LIKE '%groszki %') OR (description LIKE '%groszki %') OR (name LIKE '%groszek %') OR (description LIKE '%groszek %'))"
+."WHERE ((name LIKE '%grosz%') OR (description LIKE '%grosz%') OR (shopcategory LIKE '%grosz%'))"
 ."AND pattern NOT LIKE '%w groszki%'"
-."AND ((maincategory='Buty-damskie') OR (categoryOne='Baleriny-damskie') OR (categoryOne='Botki-damskie') OR (categoryOne='Czolenka-damskie') OR (categoryOne='Kozaki-damskie') OR (categoryOne='Polbuty-damskie') OR (categoryOne='Szpilki-damskie'))"
+."AND ((maincategory='Sukienki') OR (categoryOne='Baleriny-damskie') OR (categoryOne='Botki-damskie') OR (categoryOne='Czolenka-damskie') OR (categoryOne='Kozaki-damskie') OR (categoryOne='Polbuty-damskie') OR (categoryOne='Szpilki-damskie'))"
 ;
 
 $result = mysql_query($sql);
@@ -214,7 +214,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, 'w kratę;'), patternName= CONCAT(patternName, 'w-krate;')"
 ."WHERE ((name LIKE '%krata %') OR (description LIKE '%krata %') OR (name LIKE '%kratę %') OR (description LIKE '%kratę %'))"
 ."AND pattern NOT LIKE '%w kratę%'"
@@ -240,4 +240,4 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}
+}*/

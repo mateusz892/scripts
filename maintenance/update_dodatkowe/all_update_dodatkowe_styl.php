@@ -140,9 +140,9 @@ if(!$result) {
 }
 
 $sql = "UPDATE `jos_get_xml_two`"
-."SET style= CONCAT(style, 'olowkowe;'), styleName= CONCAT(styleName, 'olowkowe;')"
+."SET style= CONCAT(style, 'ołówkowe;'), styleName= CONCAT(styleName, 'olowkowe;')"
 ."WHERE ((name LIKE '%ołówko%') OR (description LIKE '%ołówko%') OR (shopcategory LIKE '%ołówko%'))"
-."AND style NOT LIKE '%olowkowe%'"
+."AND style NOT LIKE '%ołówkowe%'"
 ."AND (maincategory='Sukienki')"
 ."AND canUpdate!='tak'"
 ;
@@ -188,6 +188,171 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'plisowane;'), styleName= CONCAT(styleName, 'plisowane;')"
 ."WHERE ((name LIKE '%plisowa%') OR (description LIKE '%plisowa%') OR (shopcategory LIKE '%plisowa%'))"
 ."AND style NOT LIKE '%plisowane%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'asymetryczne;'), styleName= CONCAT(styleName, 'asymetryczne;')"
+."WHERE ((name LIKE '%asymetry%') OR (description LIKE '%asymetry%') OR (shopcategory LIKE '%asymetry%'))"
+."AND style NOT LIKE '%asymetryczne%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'z falbankami;'), styleName= CONCAT(styleName, 'z-falbankami;')"
+."WHERE ((name LIKE '%falban%') OR (description LIKE '%falban%'))"
+."AND style NOT LIKE '%z falbankami%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'dopasowane;'), styleName= CONCAT(styleName, 'dopasowane;')"
+."WHERE ((name LIKE '%dopasowa%') OR (description LIKE '%dopasowa%') OR (name LIKE '%obcis%') OR (description LIKE '%obcis%'))"
+."AND style NOT LIKE '%dopasowane%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'z cekinami;'), styleName= CONCAT(styleName, 'z-cekinami;')"
+."WHERE ((name LIKE '%cekin%') OR (description LIKE '%cekin%') OR (shopcategory LIKE '%cekin%'))"
+."AND style NOT LIKE '%z cekinami%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'proste;'), styleName= CONCAT(styleName, 'proste;')"
+."WHERE ((name LIKE '%prost%') OR (description LIKE '%prost%') OR (shopcategory LIKE '%prost%'))"
+."AND style NOT LIKE '%proste%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'z odkrytymi plecami;'), styleName= CONCAT(styleName, 'z-odkrytymi-plecami;')"
+."WHERE (((name LIKE '%plec%') OR (description LIKE '%plec%') OR (shopcategory LIKE '%plec%')) AND ((name LIKE '%odkry%') OR (description LIKE '%odkry%') OR (shopcategory LIKE '%odkry%')))"
+."AND style NOT LIKE '%z odkrytymi plecami%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'szmizjerki;'), styleName= CONCAT(styleName, 'szmizjerki;')"
+."WHERE ((name LIKE '%szmizjer%') OR (description LIKE '%szmizjer%'))"
+."AND style NOT LIKE '%szmizjerki%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'brokatowe;'), styleName= CONCAT(styleName, 'brokatowe;')"
+."WHERE ((name LIKE '%brokatow%') OR (description LIKE '%brokatow%'))"
+."AND style NOT LIKE '%brokatowe%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'bombki;'), styleName= CONCAT(styleName, 'bombki;')"
+."WHERE ((name LIKE '%bomb%') OR (description LIKE '%bomb%'))"
+."AND style NOT LIKE '%bombki%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'z gorsetem;'), styleName= CONCAT(styleName, 'z-gorsetem;')"
+."WHERE ((name LIKE '%gorset%') OR (description LIKE '%gorset%') OR (shopcategory LIKE '%gorset%'))"
+."AND style NOT LIKE '%z gorsetem%'"
+."AND (maincategory='Sukienki')"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'z baskinką;'), styleName= CONCAT(styleName, 'z-baskinka;')"
+."WHERE ((name LIKE '%baskin%') OR (description LIKE '%baskin%'))"
+."AND style NOT LIKE '%z baskinką%'"
 ."AND (maincategory='Sukienki')"
 ."AND canUpdate!='tak'"
 ;
