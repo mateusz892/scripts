@@ -663,8 +663,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET color='pudrowy róż', colorName='pudrowy-roz'"
-."WHERE name LIKE '%granatow%'"
-."AND ((name LIKE '%pudrow%') OR (description LIKE '%pudrow%'))"
+."WHERE ((name LIKE '%pudrow%') OR (description LIKE '%pudrow%'))"
 ."AND maincategory='Sukienki'"
 ."AND color=''"
 ."AND canUpdate!='tak'"
