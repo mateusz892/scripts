@@ -1,5 +1,5 @@
 <?php
-// Remember to declare variables
+// Remember to declare variables p
 error_reporting(0);
 $com=mysql_connect("localhost", "u705076634_longfash" ,"Dds76sd67gdcg");
 mysql_set_charset('utf8',$com);
