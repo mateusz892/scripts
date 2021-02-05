@@ -287,7 +287,6 @@ $sql = "UPDATE `jos_get_xml_two`"
 //."OR (categoryOne LIKE '%Sukienki-na-komunie%')"
 //."OR (categoryOne LIKE '%Sukienki-boho%')"
 //."OR (categoryOne LIKE '%Sukienki-za-kolano%'))"
-."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);
@@ -666,7 +665,6 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."WHERE ((name LIKE '%pudrow%') OR (description LIKE '%pudrow%'))"
 ."AND maincategory='Sukienki'"
 ."AND color=''"
-."AND canUpdate!='tak'"
 ;
 
 $result = mysql_query($sql);

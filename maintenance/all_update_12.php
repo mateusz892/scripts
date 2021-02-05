@@ -8,7 +8,6 @@ $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-wizytowe;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%wizyt%') OR (description LIKE '%wizyt%') OR (shopcategory LIKE '%wizyt%'))"
-."AND canUpdate!='tak'"
 ."AND categoryOne NOT LIKE '%Sukienki-wizytowe%'"
 ;
 
