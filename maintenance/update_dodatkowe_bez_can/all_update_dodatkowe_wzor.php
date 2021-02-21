@@ -214,9 +214,9 @@ if(!$result) {
 	echo 'succes';
 }
 
-/*$sql = "UPDATE `jos_get_xml_two`"
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, 'w kratę;'), patternName= CONCAT(patternName, 'w-krate;')"
-."WHERE ((name LIKE '%krata %') OR (description LIKE '%krata %') OR (name LIKE '%kratę %') OR (description LIKE '%kratę %'))"
+."WHERE ((name LIKE '%krata %') OR (description LIKE '%krata %') OR (name LIKE '%kratę %') OR (description LIKE '%kratę %') OR (name LIKE '% krata%') OR (description LIKE '% krata%') OR (name LIKE '% kratę%') OR (description LIKE '% kratę%'))"
 ."AND pattern NOT LIKE '%w kratę%'"
 ."AND ((maincategory='Sukienki'))"
 ;
@@ -228,7 +228,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, 'paisley;'), patternName= CONCAT(patternName, 'paisley;')"
 ."WHERE ((name LIKE '%paisley%') OR (description LIKE '%paisley%'))"
 ."AND pattern NOT LIKE '%paisley%'"

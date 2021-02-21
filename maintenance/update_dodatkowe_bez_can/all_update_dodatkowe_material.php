@@ -172,11 +172,11 @@ if(!$result) {
 	echo 'succes';
 }
 
-/*$sql = "UPDATE `jos_get_xml_two`"
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET material= CONCAT(material, 'skórzane;'), materialName= CONCAT(materialName, 'skorzane;')"
-."WHERE ((name LIKE '%skórzan%') OR (description LIKE '%skórzan%') OR (name LIKE '%skóra %') OR (description LIKE '%skóra %') OR (name LIKE '%skóry %') OR (description LIKE '%skóry %'))"
+."WHERE ((name LIKE '%skór%') OR (description LIKE '%skór%'))"
 ."AND material NOT LIKE '%skórzane%'"
-."AND ((maincategory='Bluzki-damskie') OR (maincategory='Bluzy-damskie') OR (maincategory='Koszule-meskie') OR (maincategory='Koszulki-meskie') OR (maincategory='Plaszcze-damskie') OR (maincategory='Spodnie-damskie') OR (maincategory='Spodnie-meskie') OR (maincategory='Sukienki') OR (maincategory='Swetry-damskie') OR (maincategory='Torebki-damskie') OR (categoryOne='Baleriny-damskie') OR (categoryOne='Botki-damskie') OR (categoryOne='Czapki-meskie') OR (categoryOne='Kozaki-damskie') OR (categoryOne='Paski-damskie') OR (categoryOne='Plecaki-damskie') OR (categoryOne='Polbuty-damskie') OR (categoryOne='Polbuty-meskie') OR (categoryOne='Rekawiczki-damskie'))"
+."AND ((maincategory='Spodnice') OR (maincategory='Sukienki'))"
 ;
 
 $result = mysql_query($sql);
@@ -186,7 +186,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET material= CONCAT(material, 'ze skóry ekologicznej;'), materialName= CONCAT(materialName, 'ze-skory-ekologicznej;')"
 ."WHERE ((name LIKE '%skóra ekologicz%') OR (description LIKE '%skóra ekologicz%') OR (name LIKE '%skóry ekologicz%') OR (description LIKE '%skóry ekologicz%'))"
 ."AND material NOT LIKE '%ze skóry ekologicznej%'"
@@ -410,7 +410,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-/*$sql = "UPDATE `jos_get_xml_two`"
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET material= CONCAT(material, 'satynowe;'), materialName= CONCAT(materialName, 'satynowe;')"
 ."WHERE ((name LIKE '%satyn%') OR (description LIKE '%satyn%'))"
 ."AND material NOT LIKE '%satynowe%'"
@@ -424,7 +424,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-$sql = "UPDATE `jos_get_xml_two`"
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET material= CONCAT(material, 'żakardowe;'), materialName= CONCAT(materialName, 'zakardowe;')"
 ."WHERE ((name LIKE '%żakar%') OR (description LIKE '%żakar%'))"
 ."AND material NOT LIKE '%żakardowe%'"

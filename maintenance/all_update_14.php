@@ -228,6 +228,34 @@ if(!$result) {
 	echo 'succes';
 }
 
+$sql = "UPDATE `jos_get_xml_two`"
+."SET color='chabrowe', colorName='chabrowe'"
+."WHERE name LIKE '%chabrow%'"
+."AND color=''"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+$sql = "UPDATE `jos_get_xml_two`"
+."SET color='szmaragdowe', colorName='szmaragdowe'"
+."WHERE name LIKE '%szmaragdo%'"
+."AND color=''"
+."AND canUpdate!='tak'"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
 /*$sql = "UPDATE `jos_get_xml_two`"
 ."SET color='czerwone', colorName='czerwone'"
 ."WHERE description LIKE '%czerwo%'"
