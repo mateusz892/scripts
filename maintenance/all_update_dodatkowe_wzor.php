@@ -48,7 +48,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, 'w paski;'), patternName= CONCAT(patternName, 'w-paski;')"
-."WHERE ((name LIKE '%paski %') OR (description LIKE '%paski %') OR (name LIKE '% paski%') OR (description LIKE '% paski%'))"
+."WHERE ((name LIKE '%w paski %') OR (description LIKE '%w paski %') OR (name LIKE '%w pask%') OR (description LIKE '%w pask%'))"
 ."AND pattern NOT LIKE '%w paski%'"
 ."AND ((maincategory='Bluzki-damskie') OR (maincategory='Bluzy-damskie') OR (maincategory='Buty-damskie') OR (maincategory='Koszulki-meskie') OR (maincategory='Kurtki-damskie') OR (maincategory='Kurtki-meskie') OR (maincategory='Spodnice') OR (maincategory='Spodnie-damskie') OR (maincategory='Spodnie-meskie') OR (maincategory='Sukienki') OR (maincategory='Swetry-damskie') OR (categoryOne='Baleriny-damskie') OR (categoryOne='Botki-damskie') OR (categoryOne='Czapki-meskie') OR (categoryOne='Czolenka-damskie') OR (categoryOne='Kozaki-damskie') OR (categoryOne='Krawaty') OR (categoryOne='Polbuty-damskie') OR (categoryOne='Stroje-kapielowe-damskie') OR (categoryOne='Szaliki-damskie') OR (categoryOne='Szpilki-damskie') OR (subcategoryOne='Tankini'))"
 ;

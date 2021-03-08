@@ -4,10 +4,11 @@ $com=mysql_connect("localhost", "u705076634_longfash" ,"Dds76sd67gdcg");
 mysql_set_charset('utf8',$com);
 mysql_select_db("u705076634_longfash", $com) or die(mysql_error());
 
-/*$sql = "UPDATE `jos_get_xml_two`"
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'młodzieżowe;'), styleName= CONCAT(styleName, 'mlodziezowe;')"
-."WHERE ((name LIKE '%młodzież%') OR (description LIKE '%młodzież%'))"
+."WHERE ((name LIKE '%młodzież%') OR (description LIKE '%młodzież%') OR (name LIKE '%sport%') OR (description LIKE '%sport%') OR (shopcategory LIKE '%sport%') OR (name LIKE '%dreso%') OR (description LIKE '%dreso%') OR (shopcategory LIKE '%dreso%'))"
 ."AND style NOT LIKE '%młodzieżowe%'"
+."AND (id % '2') != '0'"
 ."AND ((maincategory='Bluzki-damskie') OR (maincategory='Kurtki-damskie') OR (maincategory='Kurtki-meskie') OR (maincategory='Plaszcze-damskie') OR (maincategory='Spodnice') OR (maincategory='Spodnie-damskie') OR (maincategory='Sukienki') OR (categoryOne='Baleriny-damskie') OR (categoryOne='Botki-damskie') OR (categoryOne='Czolenka-damskie') OR (categoryOne='Kozaki-damskie') OR (categoryOne='Plecaki-damskie') OR (categoryOne='Polbuty-damskie') OR (categoryOne='Szpilki-damskie'))"
 ;
 
@@ -19,6 +20,20 @@ if(!$result) {
 }
 
 $sql = "UPDATE `jos_get_xml_two`"
+."SET style= CONCAT(style, 'z rozcięciem;'), styleName= CONCAT(styleName, 'z-rozcieciem;')"
+."WHERE ((name LIKE '%rozcięc%') OR (description LIKE '%rozcięc%'))"
+."AND style NOT LIKE '%z rozcięciem%'"
+."AND (maincategory='Sukienki')"
+;
+
+$result = mysql_query($sql);
+if(!$result) {
+	echo 'error';
+} else {
+	echo 'succes';
+}
+
+/*$sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'młodzieżowe;'), styleName= CONCAT(styleName, 'mlodziezowe;')"
 ."WHERE ((categoryOne LIKE '%Sukienki-mini%') OR (categoryOne LIKE '%Sukienki-koronkowe%'))"
 ."AND style NOT LIKE '%młodzieżowe%'"
@@ -566,7 +581,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'drapowane;'), styleName= CONCAT(styleName, 'drapowane;')"
-."WHERE ((name LIKE '%drapowan%') OR (description LIKE '%drapowan%'))"
+."WHERE ((name LIKE '%drapowan%') OR (description LIKE '%drapowan%') OR (name LIKE '%marszczeni%') OR (description LIKE '%marszczeni%'))"
 ."AND style NOT LIKE '%drapowane%'"
 ."AND (maincategory='Sukienki')"
 ;
@@ -608,7 +623,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET style= CONCAT(style, 'z rozporkiem;'), styleName= CONCAT(styleName, 'z-rozporkiem;')"
-."WHERE ((name LIKE '%rozpork%') OR (description LIKE '%rozpork%') OR (name LIKE '%rozpore%') OR (description LIKE '%rozpore%'))"
+."WHERE ((name LIKE '%rozpork%') OR (description LIKE '%rozpork%') OR (name LIKE '%rozpore%') OR (description LIKE '%rozpore%') OR (name LIKE '%rozcięc%') OR (description LIKE '%rozcięc%'))"
 ."AND style NOT LIKE '%z rozporkiem%'"
 ."AND (maincategory='Sukienki')"
 ;
