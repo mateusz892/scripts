@@ -171,7 +171,7 @@ if(!$result) {
 
 
 $sql = "UPDATE `jos_get_xml_two`"
-."SET material=''"
+."SET pattern=''"
 ;
 
 $result = mysql_query($sql);
@@ -182,7 +182,7 @@ if(!$result) {
 }
 
 $sql = "UPDATE `jos_get_xml_two`"
-."SET materialName=''"
+."SET patternName=''"
 ;
 
 $result = mysql_query($sql);
