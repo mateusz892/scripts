@@ -92,9 +92,12 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET occasion= CONCAT(occasion, ';balowe'), occasionName= CONCAT(occasionName, ';balowe')"
-."WHERE ((name LIKE '%bal%') OR (description LIKE '%bal%'))"
+."WHERE ((name LIKE '%studnió%') OR (description LIKE '%studnió%') OR (name LIKE '%balow%') OR (description LIKE '%balow%') OR (name LIKE '%bal %') OR (description LIKE '%bal %') OR (name LIKE '% bal%') OR (description LIKE '% bal%'))"
+."AND name NOT LIKE '%balon%'"
+."AND description NOT LIKE '%balon%'"
 ."AND occasion NOT LIKE '%;balowe%'"
 ."AND maincategory='Sukienki'"
+."AND (id % '2') = '0'"
 ;
 
 $result = mysql_query($sql);
