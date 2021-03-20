@@ -494,7 +494,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-/*$sql = "UPDATE `jos_get_xml_two`"
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-trapezowe;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%trapez%') OR (description LIKE '%trapez%') OR (shopcategory LIKE '%trapez%'))"
