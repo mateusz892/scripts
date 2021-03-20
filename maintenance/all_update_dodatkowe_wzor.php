@@ -48,7 +48,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, ';w paski'), patternName= CONCAT(patternName, ';w-paski')"
-."WHERE ((name LIKE '%w paski %') OR (description LIKE '%w paski %') OR (name LIKE '%w pask%') OR (description LIKE '%w pask%'))"
+."WHERE ((name LIKE '%w paski %') OR (description LIKE '%w paski %') OR (name LIKE '%w pask%') OR (description LIKE '%w pask%') OR (shopcategory LIKE '%w pask%'))"
 ."AND pattern NOT LIKE '%;w paski%'"
 ."AND ((maincategory='Bluzki-damskie') OR (maincategory='Bluzy-damskie') OR (maincategory='Buty-damskie') OR (maincategory='Koszulki-meskie') OR (maincategory='Kurtki-damskie') OR (maincategory='Kurtki-meskie') OR (maincategory='Spodnice') OR (maincategory='Spodnie-damskie') OR (maincategory='Spodnie-meskie') OR (maincategory='Sukienki') OR (maincategory='Swetry-damskie') OR (categoryOne='Baleriny-damskie') OR (categoryOne='Botki-damskie') OR (categoryOne='Czapki-meskie') OR (categoryOne='Czolenka-damskie') OR (categoryOne='Kozaki-damskie') OR (categoryOne='Krawaty') OR (categoryOne='Polbuty-damskie') OR (categoryOne='Stroje-kapielowe-damskie') OR (categoryOne='Szaliki-damskie') OR (categoryOne='Szpilki-damskie') OR (subcategoryOne='Tankini'))"
 ;
@@ -90,7 +90,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET pattern= CONCAT(pattern, ';w kwiaty'), patternName= CONCAT(patternName, ';w-kwiaty')"
-."WHERE ((name LIKE '%kwiat%') OR (description LIKE '%kwiat%') OR (name LIKE '%kwiecis%') OR (description LIKE '%kwiecis%'))"
+."WHERE ((name LIKE '%kwiat%') OR (description LIKE '%kwiat%') OR (name LIKE '%kwiecis%') OR (description LIKE '%kwiecis%') OR (shopcategory LIKE '%kwiecis%') OR (shopcategory LIKE '%kwiat%'))"
 ."AND pattern NOT LIKE '%;w kwiaty%'"
 ."AND ((maincategory='Bluzki-damskie') OR (maincategory='Bluzy-damskie') OR (maincategory='Buty-damskie') OR (maincategory='Kurtki-damskie') OR (maincategory='Spodnice') OR (maincategory='Spodnie-damskie') OR (maincategory='Spodnie-meskie') OR (maincategory='Sukienki') OR (maincategory='Swetry-damskie') OR (categoryOne='Baleriny-damskie') OR (categoryOne='Botki-damskie') OR (categoryOne='Czolenka-damskie') OR (categoryOne='Kozaki-damskie') OR (categoryOne='Krawaty') OR (categoryOne='Polbuty-damskie') OR (categoryOne='Stroje-kapielowe-damskie') OR (categoryOne='Szaliki-damskie') OR (categoryOne='Szpilki-damskie') OR (subcategoryOne='Tankini'))"
 ;

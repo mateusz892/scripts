@@ -169,20 +169,11 @@ if(!$result) {
 	echo 'succes';
 }*/
 
-
 $sql = "UPDATE `jos_get_xml_two`"
-."SET pattern=''"
-;
-
-$result = mysql_query($sql);
-if(!$result) {
-	echo 'error';
-} else {
-	echo 'succes';
-}
-
-$sql = "UPDATE `jos_get_xml_two`"
-."SET patternName=''"
+."SET style= CONCAT(style, ';żakietowe'), styleName= CONCAT(styleName, ';zakietowe')"
+."WHERE ((name LIKE '%żakiet%') OR (description LIKE '%żakiet%') OR (shopcategory LIKE '%żakiet%'))"
+."AND style NOT LIKE '%;żakietowe%'"
+."AND (maincategory='Sukienki')"
 ;
 
 $result = mysql_query($sql);

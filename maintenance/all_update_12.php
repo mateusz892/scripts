@@ -300,7 +300,7 @@ if(!$result) {
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-letnie;')"
 ."WHERE ((name LIKE '%sukienka %'))"
-."AND ((name LIKE '%lato%') OR (description LIKE '%lato%') OR (shopcategory LIKE '%lato%') OR (description LIKE '%letn%') OR (name LIKE '%letn%'))"
+."AND ((name LIKE '%lato%') OR (description LIKE '%lato%') OR (shopcategory LIKE '%lato%') OR (description LIKE '%letn%') OR (name LIKE '%letn%') OR (shopcategory LIKE '%letn%'))"
 //."AND canUpdate!='tak'"
 ."AND categoryOne NOT LIKE '%Sukienki-letnie%'"
 ;

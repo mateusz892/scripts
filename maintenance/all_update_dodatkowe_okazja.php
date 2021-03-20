@@ -6,7 +6,7 @@ mysql_select_db("u705076634_longfash", $com) or die(mysql_error());
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET occasion= CONCAT(occasion, ';na studniówkę'), occasionName= CONCAT(occasionName, ';na-studniowke')"
-."WHERE ((name LIKE '%studnió%') OR (description LIKE '%studnió%') OR (categoryOne LIKE '%Sukienki-koronkowe%'))"
+."WHERE ((name LIKE '%studnió%') OR (description LIKE '%studnió%') OR (shopcategory LIKE '%studnió%') OR (categoryOne LIKE '%Sukienki-koronkowe%'))"
 ."AND occasion NOT LIKE '%;na studniówkę%'"
 ."AND maincategory='Sukienki'"
 ;
@@ -20,7 +20,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET occasion= CONCAT(occasion, ';sylwestrowe'), occasionName= CONCAT(occasionName, ';sylwestrowe')"
-."WHERE ((name LIKE '%sylwestr%') OR (description LIKE '%sylwestr%') OR (shopcategory LIKE '%sylwestr%') OR (description LIKE '%cekin%') OR (name LIKE '%cekin%'))"
+."WHERE ((name LIKE '%sylwestr%') OR (description LIKE '%sylwestr%') OR (shopcategory LIKE '%sylwestr%') OR (description LIKE '%cekin%') OR (name LIKE '%cekin%') OR (shopcategory LIKE '%cekin%'))"
 ."AND occasion NOT LIKE '%;sylwestrowe%'"
 ."AND maincategory='Sukienki'"
 ;
@@ -49,7 +49,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET occasion= CONCAT(occasion, ';na co dzień'), occasionName= CONCAT(occasionName, ';na-co-dzien')"
-."WHERE ((name LIKE '%casual%') OR (description LIKE '%casual%') OR (name LIKE '%co dzień%') OR (description LIKE '%co dzień%'))"
+."WHERE ((name LIKE '%casual%') OR (description LIKE '%casual%') OR (name LIKE '%co dzień%') OR (description LIKE '%co dzień%') OR (shopcategory LIKE '%co dzień%') OR (shopcategory LIKE '%casual%'))"
 ."AND occasion NOT LIKE '%;na co dzień%'"
 ."AND maincategory='Sukienki'"
 ;
@@ -77,7 +77,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET occasion= CONCAT(occasion, ';na imprezę'), occasionName= CONCAT(occasionName, ';na-impreze')"
-."WHERE ((name LIKE '%imprez%') OR (description LIKE '%imprez%') OR (name LIKE '%koktajlo%') OR (description LIKE '%koktajlo%') OR (shopcategory LIKE '%koktajlo%'))"
+."WHERE ((name LIKE '%imprez%') OR (description LIKE '%imprez%') OR (name LIKE '%koktajlo%') OR (description LIKE '%koktajlo%') OR (shopcategory LIKE '%koktajlo%') OR (shopcategory LIKE '%imprez%'))"
 ."AND (id % '2') != '0'"
 ."AND occasion NOT LIKE '%;na imprezę%'"
 ."AND maincategory='Sukienki'"
@@ -92,7 +92,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET occasion= CONCAT(occasion, ';balowe'), occasionName= CONCAT(occasionName, ';balowe')"
-."WHERE ((name LIKE '%studnió%') OR (description LIKE '%studnió%') OR (name LIKE '%balow%') OR (description LIKE '%balow%') OR (name LIKE '%bal %') OR (description LIKE '%bal %') OR (name LIKE '% bal%') OR (description LIKE '% bal%'))"
+."WHERE ((name LIKE '%studnió%') OR (description LIKE '%studnió%') OR (shopcategory LIKE '%studnió%') OR (name LIKE '%balow%') OR (description LIKE '%balow%') OR (name LIKE '%bal %') OR (description LIKE '%bal %') OR (name LIKE '% bal%') OR (description LIKE '% bal%') OR (shopcategory LIKE '% balowe%') OR (shopcategory LIKE '% bal%'))"
 ."AND name NOT LIKE '%balon%'"
 ."AND description NOT LIKE '%balon%'"
 ."AND occasion NOT LIKE '%;balowe%'"
@@ -151,7 +151,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET occasion= CONCAT(occasion, ';na 18'), occasionName= CONCAT(occasionName, ';na-18')"
-."WHERE ((name LIKE '%na 18%') OR (description LIKE '%na 18%') OR (name LIKE '%na osiemn%') OR (description LIKE '%na osiemn%') OR (name LIKE '%koktajlo%') OR (description LIKE '%koktajlo%') OR (shopcategory LIKE '%koktajlo%'))"
+."WHERE ((name LIKE '%na 18%') OR (description LIKE '%na 18%') OR (name LIKE '%na osiemn%') OR (description LIKE '%na osiemn%') OR (name LIKE '%koktajlo%') OR (description LIKE '%koktajlo%') OR (shopcategory LIKE '%koktajlo%') OR (shopcategory LIKE '%na 18%') OR (shopcategory LIKE '%na osiemn%'))"
 ."AND occasion NOT LIKE '%;na 18%'"
 ."AND (id % '2') = '0'"
 ."AND (maincategory='Sukienki')"

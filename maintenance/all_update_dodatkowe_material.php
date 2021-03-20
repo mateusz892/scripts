@@ -34,7 +34,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET material= CONCAT(material, ';wełniane'), materialName= CONCAT(materialName, ';welniane')"
-."WHERE ((name LIKE '% wełnian%') OR (description LIKE '% wełnian%') OR (name LIKE '% wełna %') OR (description LIKE '% wełna %') OR (name LIKE '% wełny %') OR (description LIKE '% wełny %') OR (name LIKE '% wełna%') OR (description LIKE '% wełna%') OR (name LIKE '% wełny%') OR (description LIKE '% wełny%'))"
+."WHERE ((name LIKE '% wełnian%') OR (description LIKE '% wełnian%') OR (name LIKE '% wełna %') OR (description LIKE '% wełna %') OR (name LIKE '% wełny %') OR (description LIKE '% wełny %') OR (name LIKE '% wełna%') OR (description LIKE '% wełna%') OR (name LIKE '% wełny%') OR (description LIKE '% wełny%') OR (shopcategory LIKE '% wełny%') OR (shopcategory LIKE '% wełnian%'))"
 ."AND material NOT LIKE '%;wełniane%'"
 ."AND ((maincategory='Bluzki-damskie') OR (maincategory='Bluzy-damskie') OR (maincategory='Kurtki-damskie') OR (maincategory='Kurtki-meskie') OR (maincategory='Spodnice') OR (maincategory='Spodnie-damskie') OR (maincategory='Sukienki') OR (maincategory='Swetry-damskie') OR (categoryOne='Czapki-damskie') OR (categoryOne='Czapki-meskie') OR (categoryOne='Krawaty') OR (categoryOne='Muchy-meskie') OR (categoryOne='Poszetki') OR (categoryOne='Rekawiczki-damskie') OR (categoryOne='Szaliki-damskie') OR (subcategoryOne='Pizamy-damskie'))"
 ;
@@ -90,7 +90,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET material= CONCAT(material, ';z wiskozy'), materialName= CONCAT(materialName, ';z-wiskozy')"
-."WHERE ((name LIKE '%wiskoz%') OR (description LIKE '%wiskoz%'))"
+."WHERE ((name LIKE '%wiskoz%') OR (description LIKE '%wiskoz%') OR (shopcategory LIKE '%wiskoz%'))"
 ."AND material NOT LIKE '%;z wiskozy%'"
 ."AND ((maincategory='Bluzki-damskie') OR (maincategory='Bluzy-damskie') OR (maincategory='Kurtki-damskie') OR (maincategory='Kurtki-meskie') OR (maincategory='Plaszcze-damskie') OR (maincategory='Spodnice') OR (maincategory='Spodnie-damskie') OR (maincategory='Spodnie-meskie') OR (maincategory='Sukienki') OR (maincategory='Swetry-damskie') OR (categoryOne='Czapki-damskie') OR (categoryOne='Rekawiczki-damskie') OR (categoryOne='Szaliki-damskie') OR (subcategoryOne='Pizamy-damskie'))"
 ;
@@ -160,7 +160,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET material= CONCAT(material, ';jedwabne'), materialName= CONCAT(materialName, ';jedwabne')"
-."WHERE ((name LIKE '%jedwab%') OR (description LIKE '%jedwab%'))"
+."WHERE ((name LIKE '%jedwab%') OR (description LIKE '%jedwab%') OR (shopcategory LIKE '%jedwab%'))"
 ."AND material NOT LIKE '%;jedwabne%'"
 ."AND ((maincategory='Bluzki-damskie') OR (maincategory='Sukienki') OR (categoryOne='Czapki-damskie') OR (categoryOne='Krawaty') OR (categoryOne='Muchy-meskie') OR (categoryOne='Poszetki') OR (subcategoryOne='Pizamy-damskie'))"
 ;
@@ -174,7 +174,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET material= CONCAT(material, ';skórzane'), materialName= CONCAT(materialName, ';skorzane')"
-."WHERE ((name LIKE '%skór%') OR (description LIKE '%skór%'))"
+."WHERE ((name LIKE '%skór%') OR (description LIKE '%skór%') OR (shopcategory LIKE '%skór%'))"
 ."AND material NOT LIKE '%;skórzane%'"
 ."AND ((maincategory='Spodnice') OR (maincategory='Sukienki'))"
 ;
@@ -258,7 +258,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET material= CONCAT(material, ';lniane'), materialName= CONCAT(materialName, ';lniane')"
-."WHERE ((name LIKE '% len %') OR (description LIKE '% len %') OR (name LIKE '% lnu %') OR (description LIKE '% lnu %') OR (name LIKE '% len%') OR (description LIKE '% len%') OR (name LIKE '% lnu%') OR (description LIKE '% lnu%') OR (name LIKE '%lnian%') OR (description LIKE '%lnian%'))"
+."WHERE ((name LIKE '% len %') OR (description LIKE '% len %') OR (name LIKE '% lnu %') OR (description LIKE '% lnu %') OR (name LIKE '% len%') OR (description LIKE '% len%') OR (name LIKE '% lnu%') OR (description LIKE '% lnu%') OR (name LIKE '%lnian%') OR (description LIKE '%lnian%') OR (shopcategory LIKE '%lnian%') OR (shopcategory LIKE '%lnian%') OR (shopcategory LIKE '% lnu%') OR (shopcategory LIKE '% len%'))"
 ."AND material NOT LIKE '%;lniane%'"
 ."AND ((maincategory='Bluzki-damskie') OR (maincategory='Bluzy-damskie') OR (maincategory='Spodnie-damskie') OR (maincategory='Spodnie-meskie') OR (maincategory='Sukienki') OR (categoryOne='Krawaty') OR (categoryOne='Poszetki'))"
 ;
@@ -412,7 +412,7 @@ if(!$result) {
 
 $sql = "UPDATE `jos_get_xml_two`"
 ."SET material= CONCAT(material, ';satynowe'), materialName= CONCAT(materialName, ';satynowe')"
-."WHERE ((name LIKE '%satyn%') OR (description LIKE '%satyn%'))"
+."WHERE ((name LIKE '%satyn%') OR (description LIKE '%satyn%') OR (shopcategory LIKE '%satyn%'))"
 ."AND material NOT LIKE '%;satynowe%'"
 ."AND ((maincategory='Sukienki'))"
 ;

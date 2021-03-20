@@ -134,7 +134,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-/*$sql = "UPDATE `jos_get_xml_two`"
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-asymetryczne;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%asymetry%') OR (description LIKE '%asymetry%') OR (shopcategory LIKE '%asymetry%'))"
@@ -181,7 +181,7 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}*/
+}
 
 /*$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne='Sukienki-dla-puszystych'"
@@ -526,7 +526,7 @@ if(!$result) {
 	echo 'succes';
 }
 
-/*$sql = "UPDATE `jos_get_xml_two`"
+$sql = "UPDATE `jos_get_xml_two`"
 ."SET categoryOne= CONCAT(categoryOne, 'Sukienki-koszulowe;')"
 ."WHERE ((name LIKE '%sukienka %'))"
 ."AND ((name LIKE '%koszulo%') OR (description LIKE '%koszulo%') OR (shopcategory LIKE '%koszulo%'))"
@@ -573,4 +573,4 @@ if(!$result) {
 	echo 'error';
 } else {
 	echo 'succes';
-}*/
+}
