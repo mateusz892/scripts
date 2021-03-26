@@ -5,9 +5,9 @@ mysql_set_charset('utf8',$com);
 mysql_select_db("u705076634_longfash", $com) or die(mysql_error());
 
 $sql = "UPDATE `jos_get_xml_two`"
-."SET sleeveLength= CONCAT(sleeveLength, 'z długim rękawem;'), sleeveLengthName= CONCAT(sleeveLength, 'z-dlugim-rekawem;')"
-."WHERE ((name LIKE '%długim rękawem%') OR (description LIKE '%długim rękawem%') OR (name LIKE '%długi rękaw%') OR (description LIKE '%długi rękaw%') OR (name LIKE '%długimi rękaw%') OR (description LIKE '%długimi rękaw%'))"
-."AND sleeveLength NOT LIKE '%z długim rękawem;%'"
+."SET sleeveLength= CONCAT(sleeveLength, ';z długim rękawem'), sleeveLengthName= CONCAT(sleeveLength, ';z-dlugim-rekawem')"
+."WHERE ((name LIKE '%długim rękawem%') OR (description LIKE '%długim rękawem%') OR (name LIKE '%długi rękaw%') OR (description LIKE '%długi rękaw%') OR (name LIKE '%długimi rękaw%') OR (description LIKE '%długimi rękaw%') OR (shopcategory LIKE '%długi rękaw%') OR (shopcategory LIKE '%długim rękawem%') OR (shopcategory LIKE '%długimi rękaw%'))"
+."AND sleeveLength NOT LIKE '%;z długim rękawem%'"
 ."AND maincategory='Sukienki'"
 ."AND canUpdate!='tak'"
 ;
@@ -20,9 +20,9 @@ if(!$result) {
 }
 
 $sql = "UPDATE `jos_get_xml_two`"
-."SET sleeveLength= CONCAT(sleeveLength, 'na ramiączkach;'), sleeveLengthName= CONCAT(sleeveLength, 'na-ramiaczkach;')"
+."SET sleeveLength= CONCAT(sleeveLength, ';na ramiączkach'), sleeveLengthName= CONCAT(sleeveLength, ';na-ramiaczkach')"
 ."WHERE ((name LIKE '%ramiączk%') OR (description LIKE '%ramiączk%'))"
-."AND sleeveLength NOT LIKE '%na ramiączkach;%'"
+."AND sleeveLength NOT LIKE '%;na ramiączkach%'"
 ."AND maincategory='Sukienki'"
 ."AND canUpdate!='tak'"
 ;
